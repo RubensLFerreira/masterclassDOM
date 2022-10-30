@@ -1,0 +1,75 @@
+// pegando uma tag pelo id
+var notion = document.getElementById('notion-app');
+
+// pegando várias classes
+var intercom = document.getElementsClassName('notion-app-inner');
+
+// chamando o elemento
+intercom[0]
+
+// pegando alguma tag do html
+document.getElementsTagName('a');
+
+// pegando class com querySelector
+document.querySelector('.intercom-lightweight-app')
+
+// buscando todas as tags
+document.querySelectorAll('a');
+
+// o forEach só funcionar com o querySelectorAll
+let as = document.querySelectorAll('a');
+as.forEach((element) => {
+    console.log(element);
+});
+
+// alterando o texto de uma tag pelo class
+let notion = document.querySelector('.notranslate');
+notion.innerText = 'Rubens DOM';
+
+// alterando o texto e html de uma tag pelo class
+let notion = document.querySelector('.notranslate');
+notion.innerHTML = '<h1>Exagerado</h1>';
+
+// alterando o estilo
+let app = document.querySelector('#notion-app');
+let frame = app.querySelector('.notion-frame');
+frame.style.backgroundColor = "#000";
+
+// descobrir se frame de um pai
+frame.parentNode
+
+// descobrir se frame de filho
+frame.children
+
+// descobrir a quantidade de elementos filhos
+frame.children.lenght ou frame.childElementCount
+
+// pegando a primeira div filho
+frame.firstChild ou frame.fistElementChild
+
+// pegando a último div filho
+frame.lastChild ou frame.lastElementChild
+
+// descobrir o próximo elemento irmão
+frame.nextSibling ou frame.nextElementSibling
+
+// descobrir o anterior elemento irmão
+frame.previousSibling ou frame.previousElementSibling
+
+// estilizando o elemento anterior
+frame.previousSibling.style.backgroundColor = "red";
+
+// criando um elemento
+let iframe = document.createElement('iframe');
+
+// add link para iframe
+iframe.src = 'https://youtu.be/TkD0QMyBa28';
+
+// add tamanho ao iframe
+iframe.width = '100px'; ou iframe.height = '100px';
+
+// criar um elemento após
+document.body.append(iframe);
+
+// criar um elemento antes
+document.body.prepend(iframe);
