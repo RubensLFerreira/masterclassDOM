@@ -73,3 +73,13 @@ document.body.append(iframe);
 
 // criar um elemento antes
 document.body.prepend(iframe);
+
+// inserindo atributo
+const li = document.createElement('li');
+li.setAttribute('class', 'lista');
+
+// Pegando atributo
+li.getAttribute('id'); ou li.getAttribute('class');
+
+// remover o atributo
+li.removeAttribute('id');

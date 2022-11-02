@@ -15,4 +15,23 @@
 
     <script src="main.js"></script>
   </body>
+
+  <script>
+    let menu = document.querySelector("#menu");
+
+    let li1 = document.querySelector(".li");
+    let li2 = document.createElement("li");
+    let li3 = document.createElement("li");
+
+    li2.setAttribute("class", "li");
+    li3.setAttribute("class", "li");
+
+    li2.innerText = "Services";
+    li3.innerText = "Users";
+
+    let father = li1.parentNode;
+
+    father.insertBefore(li2, li1);
+    father.insertBefore(li3, li2);
+  </script>
 </html>
